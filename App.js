@@ -1,4 +1,4 @@
-import { View, Text,StyleSheet, TextInput,Button } from 'react-native'
+import { View, Text,StyleSheet, TextInput,Image, Button,StatusBar, Platform} from 'react-native'
 import React from 'react'
 
 
@@ -10,6 +10,11 @@ const App = () => {
       <TextInput>username</TextInput>
       <Text>passwords</Text>
       <TextInput textContentType='password'>password</TextInput>
+      <Button title=' register'/>
+      <Image blurRadius={1} fadeDuration={2000} source={{width:200,
+      height:300,
+        uri:"https://picsum.photos/200/300"}}/>
+
       {/* <Button>"login"</Button> */}
 
     </View>
@@ -17,10 +22,12 @@ const App = () => {
 }
 const styles = StyleSheet.create({
   container:{
-  flex:-1,
+  flex:1,
   backgroundColor:'dodgerblue',
 alignItems:"center",
-justifyContent:"center"}
+// StatusBar:Platform
+justifyContent:"center",
+}
 })
 
 export default App
