@@ -1,22 +1,14 @@
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text } from 'react-native'
 import React from 'react'
-
-import Demo from './components/demo'
-
+import SimpleFormValidation from './components/SimpleForms'
 
 const App = () => {
   return (
-    <View style={styles.main}>
-      <Demo/>
+    <View>
+      <Text>App</Text>
+      <SimpleFormValidation/>
     </View>
   )
 }
-const styles = StyleSheet.create({
-  main: {
-    flex: 1,
-    justifyContent: 'center',
-    padding: 20,
-    alignItems:'center',
-    backgroundColor: '#fff',}})
 
 export default App
